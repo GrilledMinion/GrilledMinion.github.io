@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>kesä tulee</title>
+	<style>
+	body{
+		background-color: green;
+	}
+	</style>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script>
+	window.onload = function() {
+	$('#Kylla_nappi').click( function() {
+		$('#kylla_teksti').show();
+	});
+	
+	$('#kylla_teksti').hide();
+		
+		}
+	
+	}
+	/*
+		var nappi1 = document.getElementById("nappi1");
+		nappi1.addEventListener("click", function() { alert("painoit nappulaa"); }); 
+		}			*/
+	</script>
+	
+</head>
+<body>
+<h1>Game Time</h1>
+</body>
+<p>Voitit pelin...</p>
+<p>Hävisit pelin...</p>
+<button id="kylla_nappi">Kyllä</button>
+<p> id="kylla_teksti">Voitit pelin</p>
+</body>	
+</html>
