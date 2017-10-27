@@ -1,37 +1,78 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>kesä tulee</title>
-	<style>
-	body{
-		background-color: green;
-	}
-	</style>
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	<script>
-	window.onload = function() {
-	$('#Kylla_nappi').click( function() {
-		$('#kylla_teksti').show();
-	});
-	
-	$('#kylla_teksti').hide();
-		
-		}
-	
-	}
-	/*
-		var nappi1 = document.getElementById("nappi1");
-		nappi1.addEventListener("click", function() { alert("painoit nappulaa"); }); 
-		}			*/
-	</script>
-	
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th {
+    background-color: crimson;
+    color: white;
+}
+</style>
 </head>
 <body>
-<h1>Game Time</h1>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>present</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>new pc</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>mac book pro</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>new car</td>
+  </tr>
+</table>
+<br>
+
+<table id="t01">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>present</th>
+  </tr>
+  <tr>
+    <td>Niclas</td>
+    <td>Smith</td>
+    <td>new bike</td>
+  </tr>
+  <tr>
+    <td>Santtu</td>
+    <td>Malkamo</td>
+    <td>new fridge</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>floe</td>
+    <td>new tv</td>
+  </tr>
+</table>
+
 </body>
-<p>Voitit pelin...</p>
-<p>Hävisit pelin...</p>
-<button id="kylla_nappi">Kyllä</button>
-<p> id="kylla_teksti">Voitit pelin</p>
-</body>	
 </html>
